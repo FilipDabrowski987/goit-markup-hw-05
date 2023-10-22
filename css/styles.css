@@ -104,6 +104,8 @@ width: calc((100% - 72px) / 4);
 
 .lipic {
     display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 .char {
@@ -317,6 +319,7 @@ footer {
     padding: 24px 0;
 }
 
+
 .navigation:hover,
 .navigation:focus {
     color: var(--pressed-state);
@@ -387,8 +390,8 @@ footer {
     display: block;
 }
 
-.lipic:hover,
-.lipic:focus {
+.libuttonpic:hover,
+.libuttonpic:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -636,4 +639,29 @@ gap: 332px;
 
 .svgsocial-link-icons-infoo{
     fill: var(--light);
+}
+
+.overlay {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-brand);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    max-width: 360px;
+    max-height: 300px;
+    translate: 0 100%;
+    transition: translate 400ms;
+}
+
+.linkoverlay:hover .overlay {
+    translate: 0;
 }
