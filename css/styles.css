@@ -209,8 +209,10 @@ address {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--accent);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filtr:hover,
@@ -236,8 +238,7 @@ address {
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body > button {
@@ -388,6 +389,7 @@ footer {
 
 .libuttonpic {
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .libuttonpic:hover,
@@ -573,8 +575,7 @@ gap: 332px;
     border-style: solid;
     border-color: var(--subtle-text);
     color: var(--subtle-text);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-links:hover,
@@ -667,26 +668,55 @@ gap: 332px;
 }
 
 .modal-window {
-    position: fixed;
-    inset: 0 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     width: 408px;
     height: 584px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     opacity: 1;
     pointer-events: all;
     background-color: var(--modal-background);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window.is-hidden {
+.is-hidde {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
 .modal-body {
-    opacity: 0,5;
-    background-color: var(--modal-overlay);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.closebutton {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--accent);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.closebutton:hover,
+.closebutton:focus {
+    background-color: var(--pressed-state);
+    border: none;
+    
 }
