@@ -104,8 +104,13 @@ width: calc((100% - 72px) / 4);
 
 .lipic {
     display: block;
+    
+}
+
+.linkoverlay {
     position: relative;
     overflow: hidden;
+    
 }
 
 .char {
@@ -734,5 +739,13 @@ gap: 332px;
 .closebutton:focus {
     background-color: var(--pressed-state);
     border: none;
+}
 
+.link.lipic {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.link-lipic:hover,
+.link-lipic:focus {
+    transform: translateY(0%);
 }
