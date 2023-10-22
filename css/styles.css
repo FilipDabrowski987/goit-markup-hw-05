@@ -104,13 +104,11 @@ width: calc((100% - 72px) / 4);
 
 .lipic {
     display: block;
-    
 }
 
 .linkoverlay {
     position: relative;
     overflow: hidden;
-    
 }
 
 .char {
@@ -674,9 +672,7 @@ gap: 332px;
     width: 100%;
     height: 100%;
     background-color: var(--primary-brand);
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 40px;
+    padding: 40px 32px;
     max-width: 360px;
     max-height: 300px;
     translate: 0 100%;
