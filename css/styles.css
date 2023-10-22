@@ -681,11 +681,12 @@ gap: 332px;
     border-radius: 4px;
 }
 
-.modal-window.is-hidde {
+.modal-window.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
 
 .modal-body {
-    
+    opacity: 0,5;
+    background-color: var(--modal-overlay);
 }
