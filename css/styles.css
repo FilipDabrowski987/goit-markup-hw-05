@@ -207,6 +207,8 @@ address {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--accent);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .filtr:hover,
@@ -232,6 +234,8 @@ address {
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 body > button {
@@ -320,6 +324,8 @@ footer {
 
 .link {
     text-decoration: none;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .picpar {
@@ -540,6 +546,8 @@ gap: 332px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .social-link:hover,
@@ -562,6 +570,8 @@ gap: 332px;
     border-style: solid;
     border-color: var(--subtle-text);
     color: var(--subtle-text);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .customers-links:hover,
@@ -610,6 +620,8 @@ gap: 332px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .social-link-infoo:hover,
