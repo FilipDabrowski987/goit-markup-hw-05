@@ -665,3 +665,27 @@ gap: 332px;
 .linkoverlay:hover .overlay {
     translate: 0;
 }
+
+.modal-window {
+    position: fixed;
+    inset: 0 0 auto;
+    width: 408px;
+    height: 584px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    pointer-events: all;
+    background-color: var(--modal-background);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+}
+
+.modal-window.is-hidde {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-body {
+    
+}
