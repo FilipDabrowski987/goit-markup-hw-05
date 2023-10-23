@@ -334,13 +334,12 @@ footer {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -1px;
     height: 4px;
     width: 100%;
     background-color: var(--pressed-state);
     border-radius: 2px;
     display: block;
-
 }
 
 .navigation:hover,
@@ -737,6 +736,7 @@ gap: 332px;
 .closebutton:focus {
     background-color: var(--pressed-state);
     border: none;
+    fill: var(--white-background);
 }
 
 .link.lipic {
@@ -746,4 +746,8 @@ gap: 332px;
 .link-lipic:hover,
 .link-lipic:focus {
     transform: translateY(0%);
+}
+
+.svg-modal {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
