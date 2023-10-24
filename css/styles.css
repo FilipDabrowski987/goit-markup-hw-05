@@ -322,6 +322,7 @@ footer {
     color: var(--dark);
     letter-spacing: 0.02em;
     display: inline-block;
+    padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -329,6 +330,7 @@ footer {
     position: relative;
     display: inline-block;
     color: var(--pressed-state);
+    padding: 24px 0;
     
 }
 
@@ -445,7 +447,6 @@ img {
 .ulnav {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .visually-hidden {
